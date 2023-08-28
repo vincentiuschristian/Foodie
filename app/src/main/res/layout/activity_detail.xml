@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/share_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/share_button"
+        android:src="@drawable/share"
+        android:theme="@style/ThemeOverlay.Material3.FloatingActionButton.Primary"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/imgFoodDetail"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/aglio9"
+                app:riv_corner_radius="18dp" />
+
+            <TextView
+                android:id="@+id/tvNameDetail"
+                style="@style/TextContent.HeadlineSmall.Margin"
+                android:text="@string/foodname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="16dp"
+                app:strokeWidth="1dp"
+                tools:ignore="TextSizeCheck">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTimeDetail"
+                        style="@style/TextContent.Information"
+                        android:text="@string/_30_minutes"/>
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/separator"
+                        android:src="@color/separatorColor" />
+
+                    <TextView
+                        android:id="@+id/tvServingDetail"
+                        style="@style/TextContent.Information"
+                        android:text="@string/_4"/>
+
+                    <ImageView
+                        android:layout_width="2dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/separator"
+                        android:src="@color/separatorColor" />
+
+                    <TextView
+                        android:id="@+id/tvCalories"
+                        style="@style/TextContent.Information"
+                        android:text="@string/_260_calories" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/textIngredients"
+                android:text="@string/ingredients"
+                style="@style/TextContent.HeadlineMedium.Bold"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvIngredients"
+                style="@style/TextContent.BodyMedium.Margin"
+                android:text="@string/ingredientsText" />
+
+            <TextView
+                android:id="@+id/textDirections"
+                style="@style/TextContent.HeadlineMedium.Bold"
+                android:text="@string/directions"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDirections"
+                style="@style/TextContent.BodyMedium.Margin"
+                android:layout_marginBottom="32dp"
+                android:text="@string/directionsText"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Foodie" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/light_background</item>
+        <item name="colorPrimaryVariant">@color/sweet_brown</item>
+        <item name="colorOnPrimary">@color/separatorColor</item>
+        <item name="colorPrimaryContainer">@color/pale_pink</item>
+
+        <!-- Second brand color -->
+        <item name="colorSecondary">@color/deep_taupe</item>
+        <item name="colorSecondaryVariant">@color/eerie_black</item>
+        <item name="colorOnSecondary">@color/dark_background</item>
+        <item name="colorSecondaryContainer">@color/sweet_brown</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+    </style>
+
+    <style name="Theme.Foodie" parent="Base.Theme.Foodie" />
+
+    <style name="TextContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextContent.About">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/colorSubtitle</item>
+    </style>
+
+    <!--Detail Activity-->
+    <style name="TextContent.HeadlineSmall">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.HeadlineSmall</item>
+    </style>
+
+    <style name="TextContent.HeadlineSmall.Margin">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="TextContent.Information">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="TextContent.HeadlineMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="TextContent.HeadlineMedium.Bold">
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextContent.BodyMedium">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyMedium</item>
+    </style>
+
+    <style name="TextContent.BodyMedium.Margin">
+        <item name="android:textColor">@color/colorSubtitle</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <!--Item Activity-->
+    <style name="TextContent.HeadlineItem">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyLarge</item>
+    </style>
+
+    <style name="TextContent.HeadlineItem.Margin">
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="TextContent.BodyMedium.ItemMedium">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="TextContent.BodyMedium.Item">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/colorSubtitle</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Theme.Material3.DayNight"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center|clip_horizontal|top"
+                android:src="@color/melon"
+                android:contentDescription="@string/profile_picture" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/profile_pict"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/profile_pict"
+                app:riv_border_color="@color/light_background"
+                app:riv_border_width="4dp"
+                app:riv_oval="true" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextContent.HeadlineSmall"
+            android:layout_gravity="center"
+            android:layout_marginTop="42dp"
+            android:text="@string/vincentius_christian_chandra"/>
+
+        <TextView
+            android:id="@+id/emailDicoding"
+            style="@style/TextContent.About"
+            android:layout_gravity="center"
+            android:text="@string/vincentcc02_gmail_com" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

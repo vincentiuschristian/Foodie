@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/food_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/foodImg"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/foodImage"
+            android:src="@drawable/aglio9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:riv_corner_radius_bottom_right="12dp"
+            app:riv_corner_radius_top_right="12dp"
+            tools:ignore="ImageContrastCheck" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/foodImg"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/Tv_name"
+                style="@style/TextContent.HeadlineItem.Margin"
+                android:text="@string/name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/timeText"
+                style="@style/TextContent.BodyMedium.ItemMedium"
+                android:text="@string/cooking_time"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Tv_name" />
+
+            <TextView
+                android:id="@+id/Tv_time"
+                style="@style/TextContent.BodyMedium.Item"
+                android:text="@string/time"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+            <ImageView
+                android:id="@+id/textView"
+                android:layout_width="1dp"
+                android:layout_height="42dp"
+                android:contentDescription="@string/separator"
+                android:elevation="@dimen/cardview_compat_inset_shadow"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/servingText"
+                style="@style/TextContent.BodyMedium.ItemMedium"
+                android:text="@string/servings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/Tv_name" />
+
+            <TextView
+                android:id="@+id/Tv_serving"
+                style="@style/TextContent.BodyMedium.Item"
+                android:text="@string/servings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/servingText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
