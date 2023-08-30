@@ -4,18 +4,19 @@
     <string name="splash_screen_logo">splash screen logo</string>
     <string name="servings">Porsi</string>
     <string name="servings_detail">%1$s porsi</string>
+    <string name="share_detail">%1$s \nBahan:\n%2$s \n\nPetunjuk:\n%3$s</string>
     <string name="time">Waktu</string>
     <string name="name">nama</string>
     <string name="foodImage">gambar makanan</string>
     <string name="ingredientsText">ingredientsText</string>
     <string name="ingredients">Bahan</string>
-    <string name="directions" translatable="false">Petunjuk</string>
+    <string name="instructions">Petunjuk</string>
     <string name="foodname">nama makanan</string>
     <string name="_4_person">4 orang</string>
     <string name="_30_minutes">30 menit</string>
     <string name="action_profile">action_profile</string>
     <string name="_260_calories">260 Kalori</string>
-    <string name="directionsText">Petunjuk\n</string>
+    <string name="instructionsText">Teks Petunjuk\n</string>
     <string name="profile_picture">foto profile</string>
     <string name="separator">separator</string>
     <string name="cooking_time">Waktu Masak</string>
@@ -123,7 +124,6 @@
             \n- 1 sendok makan mentega
             \n- 3 butir telur
             \n- 3 sendok teh saus cabai merah manis, atau sesuai selera
-
         </item>
 
         <item>
@@ -136,7 +136,7 @@
 
 
         <item>
-            •	3 butir telur
+            -	3 butir telur
             \n- 1 sendok makan minyak sayur
             \n- 1 bawang bombay, cincang
             \n- 1 daun bawang, cincang
@@ -151,7 +151,7 @@
         </item>
 
         <item>
-            •	¼ gelas santan
+            -	¼ gelas santan
             \n- 2 sendok makan kecap asin yang dikurangi natrium
             \n- 2 ½ sendok teh bubuk kari kuning
             \n- 1 ½ sendok teh kunyit
@@ -172,7 +172,7 @@
         </item>
 
         <item>
-            •	½ pon Mie Korean dang myun
+            -	½ pon Mie Korean dang myun
             \n- 2 ½ sendok teh minyak wijen, dibagi
             \n- 2 sendok makan kecap asin
             \n- 2 sendok teh gula putih
@@ -261,7 +261,7 @@
     </string-array>
 
     <!--Direction-->
-    <string-array name="data_direction">
+    <string-array name="data_instructions">
         <item>
             1.  Kumpulkan semua bahan Anda.
             \n2.  Masak sosis, daging giling, bawang bombay, dan bawang putih dalam oven Belanda dengan api sedang hingga berwarna kecokelatan.

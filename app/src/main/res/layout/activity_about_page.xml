@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/Theme.Material3.DayNight"
-    tools:context=".AboutActivity">
+    tools:context=".AboutPageActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

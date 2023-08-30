@@ -44,7 +44,8 @@
     <style name="TextContent.Information">
         <item name="fontFamily">@font/roboto</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginStart">2dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
         <item name="android:layout_gravity">center</item>
     </style>
 

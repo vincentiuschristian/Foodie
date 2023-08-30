@@ -10,6 +10,6 @@ data class Foodie(
     var servings: String,
     var photo: Int,
     var ingredients: String,
-    var directions: String,
+    var instructions: String,
     var calories: String,
 ): Parcelable

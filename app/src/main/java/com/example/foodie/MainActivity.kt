@@ -34,9 +34,9 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
         R.id.btn_Profile -> {
-            val moveProfileIntent = Intent(this@MainActivity, AboutActivity::class.java)
-            moveProfileIntent.putExtra(AboutActivity.EXTRA_NAMA, "Vincentius Christian Chandra")
-            moveProfileIntent.putExtra(AboutActivity.EXTRA_EMAIL, "vincentcc02@gmail.com")
+            val moveProfileIntent = Intent(this@MainActivity, AboutPageActivity::class.java)
+            moveProfileIntent.putExtra(AboutPageActivity.EXTRA_NAMA, "Vincentius Christian Chandra")
+            moveProfileIntent.putExtra(AboutPageActivity.EXTRA_EMAIL, "vincentcc02@gmail.com")
             startActivity(moveProfileIntent)
             true
         }
@@ -52,12 +52,12 @@ class MainActivity : AppCompatActivity() {
         val dataServings = resources.getStringArray(R.array.servings)
         val imgFood = resources.obtainTypedArray(R.array.data_photo)
         val dataIng = resources.getStringArray(R.array.data_ingredients)
-        val dataDirection = resources.getStringArray(R.array.data_direction)
+        val dataInstructions = resources.getStringArray(R.array.data_instructions)
         val dataCalories = resources.getStringArray(R.array.data_calories)
         val listFood = ArrayList<Foodie>()
         for (i in dataName.indices) {
             val food =
-                Foodie(dataName[i], dataTime[i], dataServings[i], imgFood.getResourceId(i, -1), dataIng[i], dataDirection[i], dataCalories[i])
+                Foodie(dataName[i], dataTime[i], dataServings[i], imgFood.getResourceId(i, -1), dataIng[i], dataInstructions[i], dataCalories[i])
             listFood.add(food)
         }
         return listFood

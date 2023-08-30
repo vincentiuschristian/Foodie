@@ -31,7 +31,7 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
         val tvServing: TextView = binding.tvServingDetail
         val imgFood: ImageView = binding.imgFoodDetail
         val tvIngredients: TextView = binding.tvIngredients
-        val tvDirection: TextView = binding.tvDirections
+        val tvInstruction: TextView = binding.tvInstructions
         val tvCal: TextView = binding.tvCalories
 
         val dataFood = if (Build.VERSION.SDK_INT >= 33) {
@@ -52,8 +52,8 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
             tvServing.text = resources.getString(R.string.servings_detail, serving)
             val ing = dataFood.ingredients
             tvIngredients.text = ing
-            val direction = dataFood.directions
-            tvDirection.text = direction
+            val instructions = dataFood.instructions
+            tvInstruction.text = instructions
             val cal = dataFood.calories
             tvCal.text = cal
         }
@@ -61,8 +61,8 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
         binding.shareAction.setOnClickListener {
             val nameRecipe = tvName.text.toString()
             val ingredients = tvIngredients.text.toString()
-            val directions = tvDirection.text.toString()
-            val shareText = "$nameRecipe \nIngredients:\n$ingredients \n\nDirections:\n$directions"
+            val instructions = tvInstruction.text.toString()
+            val shareText = resources.getString(R.string.share_detail, nameRecipe, ingredients, instructions)
             val intent = Intent()
             intent.action = Intent.ACTION_SEND
             intent.putExtra(Intent.EXTRA_TEXT, shareText)

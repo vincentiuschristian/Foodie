@@ -13,11 +13,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="32dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:contentDescription="@string/share"
         android:src="@drawable/share"
-        android:theme="@style/ThemeOverlay.Material3.FloatingActionButton.Primary"/>
+        android:theme="@style/ThemeOverlay.Material3.FloatingActionButton.Primary" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -47,77 +47,52 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.google.android.material.card.MaterialCardView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                app:cardCornerRadius="16dp"
-                app:strokeWidth="1dp"
-                tools:ignore="TextSizeCheck">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@string/clock_icon"
+                    android:src="@drawable/clock" />
 
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:contentDescription="@string/clock_icon"
-                        android:src="@drawable/clock"/>
+                <TextView
+                    android:id="@+id/tvTimeDetail"
+                    style="@style/TextContent.Information"
+                    android:text="@string/_30_minutes" />
 
-                    <TextView
-                        android:id="@+id/tvTimeDetail"
-                        style="@style/TextContent.Information"
-                        android:text="@string/_30_minutes"/>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/person_icon"
+                    android:src="@drawable/person" />
 
-                    <ImageView
-                        android:layout_width="2dp"
-                        android:layout_height="32dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:contentDescription="@string/separator"
-                        android:src="@color/separatorColor" />
+                <TextView
+                    android:id="@+id/tvServingDetail"
+                    style="@style/TextContent.Information"
+                    android:text="@string/_4_person" />
 
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:contentDescription="@string/person_icon"
-                        android:src="@drawable/person"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:contentDescription="@string/calories_icon"
+                    android:src="@drawable/fire" />
 
-                    <TextView
-                        android:id="@+id/tvServingDetail"
-                        style="@style/TextContent.Information"
-                        android:text="@string/_4_person"/>
+                <TextView
+                    android:id="@+id/tvCalories"
+                    style="@style/TextContent.Information"
+                    android:text="@string/_260_calories" />
 
-                    <ImageView
-                        android:layout_width="2dp"
-                        android:layout_height="32dp"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginStart="8dp"
-                        android:contentDescription="@string/separator"
-                        android:src="@color/separatorColor" />
-
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:contentDescription="@string/calories_icon"
-                        android:src="@drawable/fire"/>
-
-                    <TextView
-                        android:id="@+id/tvCalories"
-                        style="@style/TextContent.Information"
-                        android:text="@string/_260_calories" />
-
-                </LinearLayout>
-            </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textIngredients"
-                android:text="@string/ingredients"
                 style="@style/TextContent.HeadlineMedium.Bold"
+                android:text="@string/ingredients"
                 android:textStyle="bold" />
 
             <TextView
@@ -128,14 +103,14 @@
             <TextView
                 android:id="@+id/textDirections"
                 style="@style/TextContent.HeadlineMedium.Bold"
-                android:text="@string/directions"
+                android:text="@string/instructions"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvDirections"
+                android:id="@+id/tvInstructions"
                 style="@style/TextContent.BodyMedium.Margin"
                 android:layout_marginBottom="32dp"
-                android:text="@string/directionsText"/>
+                android:text="@string/instructionsText" />
 
         </LinearLayout>
 
