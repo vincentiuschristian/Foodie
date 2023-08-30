@@ -1,5 +1,6 @@
 package com.example.foodie
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -25,7 +26,6 @@ class MainActivity : AppCompatActivity() {
         list.addAll(getListFood())
 
         showRecyclerList()
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -34,7 +34,10 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
         R.id.btn_Profile -> {
-            startActivity(Intent(this, AboutActivity::class.java))
+            val moveProfileIntent = Intent(this@MainActivity, AboutActivity::class.java)
+            moveProfileIntent.putExtra(AboutActivity.EXTRA_NAMA, "Vincentius Christian Chandra")
+            moveProfileIntent.putExtra(AboutActivity.EXTRA_EMAIL, "vincentcc02@gmail.com")
+            startActivity(moveProfileIntent)
             true
         }
         else -> {
@@ -42,6 +45,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("Recycle")
     private fun getListFood(): ArrayList<Foodie> {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataTime = resources.getStringArray(R.array.cook_time)

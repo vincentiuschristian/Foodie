@@ -5,6 +5,8 @@
     android:id="@+id/food_list_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    style="@style/Widget.Material3.CardView.Elevated"
     android:layout_margin="8dp"
     app:cardCornerRadius="12dp">
 
@@ -19,6 +21,7 @@
             android:layout_height="120dp"
             android:contentDescription="@string/foodImage"
             android:src="@drawable/aglio9"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:riv_corner_radius_bottom_right="12dp"
@@ -28,7 +31,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/foodImg"
             app:layout_constraintTop_toTopOf="parent">
@@ -40,11 +43,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/timeText"
-                style="@style/TextContent.BodyMedium.ItemMedium"
-                android:text="@string/cooking_time"
-                app:layout_constraintEnd_toStartOf="@+id/textView"
+            <ImageView
+                android:id="@+id/clock"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/clock_icon"
+                android:src="@drawable/clock"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Tv_name" />
 
@@ -52,36 +60,30 @@
                 android:id="@+id/Tv_time"
                 style="@style/TextContent.BodyMedium.Item"
                 android:text="@string/time"
-                app:layout_constraintEnd_toStartOf="@+id/textView"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/timeText" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/clock"
+                app:layout_constraintTop_toBottomOf="@+id/Tv_name" />
 
             <ImageView
-                android:id="@+id/textView"
-                android:layout_width="1dp"
-                android:layout_height="42dp"
-                android:contentDescription="@string/separator"
-                android:elevation="@dimen/cardview_compat_inset_shadow"
-                android:textSize="36sp"
+                android:id="@+id/serving"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/person_icon"
+                android:src="@drawable/person"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/servingText"
-                style="@style/TextContent.BodyMedium.ItemMedium"
-                android:text="@string/servings"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintStart_toEndOf="@id/Tv_time"
                 app:layout_constraintTop_toBottomOf="@+id/Tv_name" />
 
             <TextView
                 android:id="@+id/Tv_serving"
                 style="@style/TextContent.BodyMedium.Item"
                 android:text="@string/servings"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/servingText" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/serving"
+                app:layout_constraintTop_toBottomOf="@+id/Tv_name" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

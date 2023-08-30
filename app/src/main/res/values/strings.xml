@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Foodie</string>
-    <string name="foodie">FOODIE</string>
+    <string name="foodie" translatable="false">FOODIE</string>
     <string name="splash_screen_logo">splash screen logo</string>
     <string name="servings">Servings</string>
+    <string name="servings_detail">%1$s servings</string>
     <string name="time">time</string>
     <string name="name">name</string>
     <string name="foodImage">foodImage</string>
@@ -10,18 +11,20 @@
     <string name="ingredients">Ingredients</string>
     <string name="directions" translatable="false">Directions</string>
     <string name="foodname">foodName</string>
-    <string name="_4">4</string>
+    <string name="_4_person">4 person</string>
     <string name="_30_minutes">30 Minutes</string>
     <string name="action_profile">action_profile</string>
-    <string name="vincentius_christian_chandra">Vincentius Christian Chandra</string>
-    <string name="vincentcc02_gmail_com">vincentcc02@gmail.com</string>
     <string name="_260_calories">260 Calories</string>
     <string name="directionsText">directionText\n</string>
     <string name="profile_picture">profile picture</string>
     <string name="separator">separator</string>
     <string name="cooking_time">Cooking Time</string>
     <string name="share">Share</string>
-    <string name="share_button">share button</string>
+    <string name="nama" translatable="false">nama</string>
+    <string name="email" translatable="false">email</string>
+    <string name="clock_icon">clock_icon</string>
+    <string name="person_icon">person icon</string>
+    <string name="calories_icon">calories icon</string>
 
     <string-array name="data_name">
         <item>Lasagna</item>
@@ -182,7 +185,7 @@
             \n•	2 cloves garlic, minced
             \n•	3 green onions cut into 1-inch pieces
             \n•	½ cup dried shiitake mushrooms, soaked until soft, then sliced into strips
-            •   1 tablespoon sesame seeds
+            \n•   1 tablespoon sesame seeds
         </item>
 
         <item>

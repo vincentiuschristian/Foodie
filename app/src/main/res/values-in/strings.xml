@@ -1,4 +1,427 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Foodie</string>
+    <string name="splash_screen_logo">splash screen logo</string>
+    <string name="servings">Porsi</string>
+    <string name="servings_detail">%1$s porsi</string>
+    <string name="time">Waktu</string>
+    <string name="name">nama</string>
+    <string name="foodImage">gambar makanan</string>
+    <string name="ingredientsText">ingredientsText</string>
+    <string name="ingredients">Bahan</string>
+    <string name="directions" translatable="false">Petunjuk</string>
+    <string name="foodname">nama makanan</string>
+    <string name="_4_person">4 orang</string>
+    <string name="_30_minutes">30 menit</string>
+    <string name="action_profile">action_profile</string>
+    <string name="_260_calories">260 Kalori</string>
+    <string name="directionsText">Petunjuk\n</string>
+    <string name="profile_picture">foto profile</string>
+    <string name="separator">separator</string>
+    <string name="cooking_time">Waktu Masak</string>
+    <string name="share">Share</string>
+    <string name="clock_icon">ikon jam</string>
+    <string name="person_icon">ikon orang</string>
+    <string name="calories_icon">ikon kalori</string>
+
+    <string-array name="data_name">
+        <item>Lasagna</item>
+        <item>Vegetarian Bibimbap</item>
+        <item>Miso Soup</item>
+        <item>Fried Rice</item>
+        <item>Chicken Satay</item>
+        <item>Japchae</item>
+        <item>Chicken Katsu</item>
+        <item>Ketoprak</item>
+        <item>Spaghetti Aglio Olio</item>
+        <item>Bakso</item>
+        <item>Beef Bulgogi</item>
+        <item>Sushi</item>
+    </string-array>
+
+    <string-array name="cook_time">
+        <item>180 menit</item>
+        <item>60 menit</item>
+        <item>30 menit</item>
+        <item>40 menit</item>
+        <item>40 menit</item>
+        <item>60 menit</item>
+        <item>45 menit</item>
+        <item>30 menit</item>
+        <item>45 menit</item>
+        <item>90 menit</item>
+        <item>90 menit</item>
+        <item>45 menit</item>
+    </string-array>
+
+    <string-array name="servings">
+        <item>12</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>6</item>
+        <item>2–3</item>
+        <item>4</item>
+        <item>6</item>
+        <item>4</item>
+        <item>8</item>
+        <item>3–4</item>
+        <item>8</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/lasagna1</item>
+        <item>@drawable/bibimbap2</item>
+        <item>@drawable/miso3</item>
+        <item>@drawable/nasigoreng4</item>
+        <item>@drawable/sate5</item>
+        <item>@drawable/japhae6</item>
+        <item>@drawable/katsu7</item>
+        <item>@drawable/ketoprak8</item>
+        <item>@drawable/aglio9</item>
+        <item>@drawable/bakso10</item>
+        <item>@drawable/bulgogi11</item>
+        <item>@drawable/sushi12</item>
+    </integer-array>
+
+    <string-array name="data_ingredients">
+        <item>
+           - 1 pon sosis Italia
+            \n- ¾ pon daging giling tanpa lemak
+            \n- ½ cangkir bawang bombay cincang
+            \n- 2 siung bawang putih, hancurkan
+            \n- 1 (28 ons) kaleng tomat yang dihancurkan
+            \n- 2 (6,5 ons) kaleng saus tomat kalengan
+            \n- ½ cangkir air
+            \n- 2 sendok makan gula putih
+            \n- 2 (6 ons) kaleng pasta tomat
+            \n- 4 sendok makan peterseli cincang, dibagi
+            \n- 1 ½ sendok teh daun kemangi kering
+            \n- 1 ½ sendok teh garam, dibagi, atau sesuai selera
+            \n- 1 sendok teh bumbu Italia
+            \n- ½ sendok teh biji adas
+            \n- ¼ sendok teh lada hitam bubuk
+            \n- 12 mie lasagna
+            \n- 16 ons keju ricotta
+            \n- 1 butir telur
+            \n- ¾ pon keju mozzarella, iris
+            \n- ¾ cangkir keju Parmesan parut
+        </item>
+
+        <item>
+            - 2 sendok makan minyak wijen
+            \n- 1 cangkir batang korek api wortel
+            \n- 1 buah batang korek api zucchini
+            \n- ½ (14 ons) kaleng tauge, tiriskan
+            \n- 6 ons rebung kalengan, tiriskan
+            \n- 1 (4,5 ons) kaleng jamur iris, tiriskan
+            \n- ⅛ sendok teh garam secukupnya
+            \n- 2 cangkir nasi yang sudah dimasak dan didinginkan
+            \n- ⅓ cangkir irisan daun bawang
+            \n- 2 sendok makan kecap asin
+            \n- ¼ sendok teh lada hitam bubuk
+            \n- 1 sendok makan mentega
+            \n- 3 butir telur
+            \n- 3 sendok teh saus cabai merah manis, atau sesuai selera
+
+        </item>
+
+        <item>
+            - 4 cangkir air
+            \n- 2 sendok teh butiran dashi
+            \n- 3 sendok makan pasta miso
+            \n- 1 (8 ons) tahu sutra, potong dadu
+            \n- 2 daun bawang, iris secara diagonal menjadi potongan berukuran 1/2 inci
+        </item>
+
+
+        <item>
+            •	3 butir telur
+            \n- 1 sendok makan minyak sayur
+            \n- 1 bawang bombay, cincang
+            \n- 1 daun bawang, cincang
+            \n- 2 buah cabai hijau, cincang
+            \n- 1 siung bawang putih, cincang
+            \n- ½ pon dada ayam tanpa kulit dan tanpa tulang, potong tipis-tipis
+            \n- ½ pon udang yang sudah dikupas dan dibuang bijinya
+            \n- 1 sendok teh ketumbar bubuk
+            \n- 1 sendok teh jintan bubuk
+            \n- 3 cangkir nasi putih dingin yang sudah dimasak
+            \n- 3 sendok makan kecap manis (kecap manis)
+        </item>
+
+        <item>
+            •	¼ gelas santan
+            \n- 2 sendok makan kecap asin yang dikurangi natrium
+            \n- 2 ½ sendok teh bubuk kari kuning
+            \n- 1 ½ sendok teh kunyit
+            \n- 3 siung bawang putih, cincang
+            \n- 1 sendok makan jahe parut segar
+            \n- 1 sendok makan gula merah
+            \n- 1 sendok makan kecap ikan
+            \n- 2 pon paha ayam tanpa tulang dan tanpa kulit, potong-potong berukuran 1 inci
+            \n- 1 sendok makan minyak canola
+            \n- Garam kosher dan lada hitam yang baru digiling, secukupnya
+            \nUntuk Saus kacang
+            \3 sendok makan selai kacang yang lembut
+            \n- 1 sendok makan kecap asin yang dikurangi natrium
+            \n- 1 sendok makan air jeruk nipis yang baru diperas
+            \n- 2 sendok teh gula merah
+            \n- 2 sendok teh saus bawang putih cabai, atau lebih
+            \n- 1 sendok teh jahe parut segar
+        </item>
+
+        <item>
+            •	½ pon Mie Korean dang myun
+            \n- 2 ½ sendok teh minyak wijen, dibagi
+            \n- 2 sendok makan kecap asin
+            \n- 2 sendok teh gula putih
+            \n- 1 sendok makan minyak sayur
+            \n- 2 wortel, potong-potong seukuran batang korek api
+            \n- ½ pon asparagus, iris tipis
+            \n- ¾ cangkir bawang bombay yang diiris tipis
+            \n- 2 siung bawang putih, cincang
+            \n- 3 daun bawang dipotong menjadi potongan-potongan 1 inci
+            \n- ½ cangkir jamur shiitake kering, rendam sampai lunak, lalu iris menjadi potongan-potongan
+            \n- 1 sendok makan biji wijen
+        </item>
+
+        <item>
+            - 1 pon dada ayam tanpa tulang dan tanpa kulit, tumbuk tipis-tipis
+            \n- 1 cangkir tepung serbaguna
+            \n- 1/2 cangkir remah roti panko
+            \n- 1 butir telur, kocok
+            \n- 1 sendok makan kecap asin
+            \n- 1 sendok makan minyak wijen
+            \n- 1 sendok makan jahe bubuk
+            \n- 1 sendok teh bubuk bawang putih
+            \n- 1/4 sendok teh garam
+            \n- 1/4 sendok teh lada hitam
+        </item>
+
+        <item>
+            - 10 ons tauge kering, bilas dan tiriskan
+            \n- 1 buah mentimun, kupas, buang bijinya, dan potong dadu
+            \n- 1/2 cangkir kacang tanah cincang, panggang dan asin
+            \n- 1/4 cangkir daun bawang cincang
+            \n- 1/4 cangkir kecap manis (kecap manis)
+            \n- 1/4 cangkir sambal kacang (saus kacang)
+            \n- 2 butir telur rebus, iris
+            \n- 1/4 cangkir bawang merah goreng cincang
+            \n- 1/4 sendok teh garam
+            \n- 1/4 sendok teh lada hitam
+        </item>
+
+        <item>
+            - 1 pon spaghetti
+            \n- 1/4 cangkir minyak zaitun
+            \n- 4 siung bawang putih, cincang
+            \n- 1/2 sendok teh serpihan cabai merah (opsional)
+            \n- 1/4 cangkir peterseli segar cincang
+            \n- Garam dan merica secukupnya
+        </item>
+
+        <item>
+            - 500 gram daging sapi giling (5% lemak)
+            \n- 1 butir telur
+            \n- 5 siung bawang putih, cincang
+            \n- 2 sendok makan tepung tapioka
+            \n- 1 sendok makan garam
+            \n- 1/2 sendok teh lada putih
+            \n- 1/4 sendok teh bubuk pengembang
+            \n- Air, sesuai kebutuhan
+        </item>
+
+        <item>
+            - 5 sendok makan kecap
+            \n- ¼ cangkir daun bawang cincang
+            \n- 2 ½ sendok makan gula putih
+            \n- 2 sendok makan bawang putih cincang
+            \n- 2 sendok makan biji wijen
+            \n- 2 sendok makan minyak wijen
+            \n- ½ sendok teh lada hitam bubuk
+            \n- Steak sayap seberat 1 pon, iris tipis
+        </item>
+
+        <item>
+            - 1 cangkir beras berbiji pendek
+            \n- 2 cangkir air
+            \n- 2 sendok makan cuka beras
+            \n- 1 sendok makan gula pasir
+            \n- 1 sendok teh garam
+            \n- 2 lembar nori, potong menjadi 8 bagian yang sama
+            \n- 1 buah alpukat, kupas, buang bijinya, dan iris
+            \n- 1 buah mentimun, kupas dan iris
+            \n- 1/2 cangkir salmon matang, cincang
+            \n- 1/4 cangkir mayones
+            \n- 1/4 sendok teh pasta wasabi
+            \n- 1/4 cangkir acar jahe
+        </item>
+
+    </string-array>
+
+    <!--Direction-->
+    <string-array name="data_direction">
+        <item>
+            1.  Kumpulkan semua bahan Anda.
+            \n2.  Masak sosis, daging giling, bawang bombay, dan bawang putih dalam oven Belanda dengan api sedang hingga berwarna kecokelatan.
+            \n3.  Masukkan tomat yang sudah dihancurkan, saus tomat, pasta tomat, dan air.
+            \n4.  Bumbui dengan gula, 2 sendok makan peterseli, kemangi, 1 sendok teh garam, bumbu Italia, biji adas, dan merica.
+            \n5.  Rebus, tutup, selama sekitar 1 1/2 jam, aduk sesekali.
+            \n6.  Didihkan sepanci besar air asin ringan.
+            \n7.  Masak mie lasagna dalam air mendidih selama 8 hingga 10 menit.
+            \n8.  Tiriskan mie, dan bilas dengan air dingin.
+            \n9.  Dalam mangkuk, campurkan keju ricotta dengan telur, sisa 2 sendok makan peterseli, dan 1/2 sendok teh garam.
+            \n10. Untuk merakit, oleskan 1 1/2 cangkir saus daging di bagian bawah loyang berukuran 9x13 inci.
+            \n11. Susun 6 mie memanjang di atas saus daging.
+            \n12. Olesi dengan 1/2 campuran keju ricotta.
+            \n13. Taburi dengan 1/3 irisan keju mozzarella.
+            \n14  Sendokkan 1 1/2 cangkir saus daging di atas mozzarella, dan taburi dengan 1/4 cangkir keju Parmesan.
+            \n15. Ulangi lapisan, dan taburi dengan sisa keju mozzarella dan Parmesan.
+            \n16. Tutupi dengan kertas timah: untuk mencegah lengket, semprotkan kertas timah dengan semprotan memasak atau pastikan kertas timah tidak menyentuh keju.
+            \n17. Panggang dalam oven yang sudah dipanaskan selama 25 menit.
+            \n18. Angkat kertas timah dan panggang selama 25 menit lagi.
+            \n19. Istirahatkan lasagna selama 15 menit sebelum disajikan.
+        </item>
+
+        <item>
+            1.	Panaskan minyak wijen dalam wajan besar dengan api sedang
+            \n2.  Masak dan aduk wortel dan zucchini dalam minyak panas hingga sayuran mulai melunak, sekitar 5 menit.
+            \n3.  Masukkan tauge, rebung, dan jamur. Masak dan aduk hingga wortel empuk, sekitar 5 menit lagi.
+            \n4.  Bumbui dengan garam dan sisihkan sayuran.
+            \n5.  Aduk nasi, daun bawang, kecap asin, dan lada hitam dalam wajan yang sama sampai nasi panas.
+            \n6.  Dalam wajan terpisah dengan api sedang, lelehkan mentega dan goreng telur dengan lembut, balikkan sekali.
+            \n7.  Sampai kuning telur masih agak encer tetapi putih telurnya keras, sekitar 3 menit per telur.
+            \n8.  Untuk penyajian, bagi campuran nasi panas ke dalam 3 mangkuk saji
+            \n9.  Taburi setiap mangkuk dengan 1/3 campuran sayuran dan telur goreng.
+            \n10. Sajikan saus cabai merah manis di samping untuk dicampurkan ke dalam bibimbap.
+        </item>
+
+        <item>
+           1.  Campurkan air dan butiran dashi dalam panci berukuran sedang dengan api sedang-besar; didihkan.
+            \n2.  Kecilkan api menjadi sedang dan masukkan pasta miso. Aduk tahu.
+            \n3.  Pisahkan lapisan daun bawang, dan tambahkan ke dalam sup.
+            \n4.  Rebus perlahan selama 2 hingga 3 menit sebelum disajikan.
+        </item>
+
+        <item>
+           1.	Panaskan wajan antilengket besar dengan api sedang.
+            \n2.	Tuang telur ke dalam wajan panas dan masak hingga pinggirannya mulai mengeras.
+            \n3.  Angkat tepinya agar telur yang belum matang mengalir ke wajan panas, sekitar 1 menit.
+            \n5.  Balik telur dadar dalam keadaan utuh dan masak hingga mengeras, sekitar 30 detik.
+            \n6.  Pindahkan telur dadar ke talenan dan iris menjadi potongan berukuran 1/2 inci. Sisihkan.
+            \n7.	Panaskan minyak sayur dalam wajan atau wajan besar dengan api besar.
+            \n8.  Masukkan bawang bombay, daun bawang, cabai, dan bawang putih.
+            \n9.  Masak dan aduk hingga bawang bombay lunak, 3 hingga 5 menit.
+            \n10. Masukkan ayam, udang, ketumbar, dan jintan; aduk rata.
+            \n11. Masak dan aduk selama sekitar 5 menit.
+            \n12.	Masukkan nasi, kecap manis, dan potongan telur dadar
+            \n13. Masak hingga nasi matang dan ayam tidak lagi berwarna merah muda di bagian tengahnya, 3 hingga 5 menit.
+        </item>
+
+        <item>
+            1.  Untuk membuat saus kacang, kocok selai kacang, kecap asin, air jeruk nipis, gula merah, saus bawang putih cabai, dan jahe dalam mangkuk kecil.
+            \n2.  Kocok dengan 2-3 sendok makan air hingga mencapai kekentalan yang diinginkan; sisihkan.
+	        \n3.  Dalam mangkuk sedang, campurkan santan, kecap, bubuk kari, kunyit, bawang putih, jahe, gula merah, dan kecap ikan.
+	        \n4.  Dalam kantong Ziploc ukuran galon atau mangkuk besar, campurkan ayam dan campuran santan; rendam selama minimal 2 jam hingga semalaman, sesekali balikkan kantong.
+	        \n5.  Tiriskan ayam dari rendaman, buang bumbunya.
+            \n6.  Panaskan panggangan dengan api sedang. Tusukkan ayam ke tusuk sate.
+            \n7.  Olesi dengan minyak kanola; bumbui dengan garam dan merica, sesuai selera.
+            \n8.  Tambahkan tusuk sate ke dalam panggangan, dan masak, sesekali dibalik, sampai ayam benar-benar matang
+            \n9. mencapai suhu internal 165 derajat F, sekitar 12-15 menit.
+        </item>
+
+        <item>
+            1.	Isi panci besar dengan air yang sedikit asin dan didihkan.
+            \n2.  Masak mie dalam air mendidih, aduk sesekali, hingga empuk namun keras saat digigit, 4 hingga 5 menit.
+            \n3.  Tiriskan, lalu bilas dengan air dingin.
+            \n4.  Aduk mie dengan 1 sendok teh minyak wijen; sisihkan.
+            \n5.  Kocok kecap dan gula dalam mangkuk kecil; sisihkan.
+            \n6.  Panaskan minyak sayur dalam wajan dengan api sedang-tinggi.
+            \n7.  Masak dan aduk wortel, asparagus, bawang bombay, dan bawang putih dalam minyak panas sampai lunak, sekitar 5 menit.
+            \n8.  Masukkan daun bawang dan jamur; lanjutkan memasak dan aduk selama 30 detik.
+            \n9.  Tuang campuran kecap, lalu tambahkan mie.
+            \n10. Masak dan aduk sampai mie hangat, 2 hingga 3 menit.
+            \n11. Angkat dari api dan aduk dengan biji wijen dan sisa 1 1/2 sendok teh minyak wijen.
+            \n12. Japchae siap disajikan
+        </item>
+
+        <item>
+            1.  Dalam mangkuk kecil, kocok tepung terigu, remah roti panko, garam, dan merica.
+            \n2.  Dalam mangkuk dangkal yang terpisah, kocok telur, kecap asin, minyak wijen, jahe, dan bawang putih bubuk.
+            \n3.  Celupkan dada ayam ke dalam adonan telur, lalu ke dalam adonan tepung roti.
+            \n4.  Panaskan minyak dalam wajan besar dengan api sedang.
+            \n5.  Goreng dada ayam secara bertahap hingga berwarna cokelat keemasan dan matang, sekitar 5 menit per sisi.
+            \n6.  Sajikan dengan saus cocolan favorit Anda.
+        </item>
+
+        <item>
+            1.  Dalam mangkuk besar, campurkan tauge, mentimun, kacang tanah, daun bawang, kecap manis, sambal kacang, telur rebus, bawang merah goreng, garam, dan merica.
+            \n2.  Aduk hingga tercampur.
+            \n3.  Sajikan segera.
+        </item>
+
+        <item>
+            1.  Masak spaghetti sesuai dengan petunjuk pada kemasan.
+            \n2.  Saat spageti dimasak, panaskan minyak zaitun dalam wajan besar dengan api sedang.
+            \n3.  Tambahkan bawang putih dan masak hingga lunak, sekitar 1 menit.
+            \n4.  Tambahkan serpihan cabai merah (jika menggunakan) dan masak selama 1 menit lagi.
+            \n5.  Tiriskan spageti dan tambahkan ke dalam wajan dengan bawang putih dan minyak.
+            \n6.  Aduk untuk melapisi.
+            \n7.  Masukkan peterseli, garam, dan merica.
+            \n8.  Sajikan segera.
+        </item>
+
+        <item>
+            1.  Dalam mangkuk besar, campurkan daging giling, telur, bawang putih, tepung tapioka, garam, lada putih, dan baking powder. Aduk rata.
+            \n2.  Tambahkan air, satu sendok makan setiap kali, sampai adonan tercampur rata.
+            \n3.  Bentuk adonan menjadi bakso dengan diameter sekitar 2 inci.
+            \n4.  Didihkan sepanci besar air hingga mendidih.
+            \n5.  Tambahkan bakso dan masak selama 10-15 menit, atau sampai matang.
+            \n6.  Tiriskan bakso
+            \n7.  Sajikan dengan saus cocolan favorit Anda.
+
+        </item>
+
+        <item>
+            1.  Kumpulkan semua bahan.
+            \n2.  Kocok kecap asin, daun bawang, gula, bawang putih, bawang putih, biji wijen, minyak wijen, dan merica dalam mangkuk.
+            \n3.  Letakkan irisan daging steak sayap di piring dangkal. Tuang bumbu di atasnya.
+            \n4.  Tutup dan dinginkan setidaknya selama 1 jam atau semalaman.
+            \n5.  Panaskan pemanggang luar ruangan dengan api besar, dan beri sedikit minyak pada panggangan.
+            \n6.  Panggang irisan steak sayap dengan cepat di atas panggangan yang sudah dipanaskan sampai sedikit hangus dan matang, 1 hingga 2 menit per sisi.
+            \n7.  Sajikan selagi panas dan nikmatilah!
+        </item>
+
+        <item>
+           1.  Bilas beras dengan saringan halus sampai airnya jernih.
+            \n2.  Campurkan beras dan air ke dalam panci.
+            \n3.  Didihkan, lalu kecilkan api dan biarkan mendidih selama 15 menit, atau sampai nasi matang.
+            \n4.  Angkat nasi dari api dan biarkan dingin selama 5 menit.
+            \n5.  Dalam mangkuk kecil, campurkan cuka beras, gula, dan garam.
+            \n6.  Aduk untuk melarutkan gula dan garam.
+            \n7.  Tambahkan campuran cuka beras ke dalam nasi dan aduk hingga tercampur.
+            \n8.  Sebarkan selembar nori di atas tikar bambu.
+            \n9.  Oleskan selapis tipis nasi di atas nori, sisakan batas 1 inci di bagian atas dan bawah.
+            \n10. Letakkan alpukat, mentimun, salmon, mayones, pasta wasabi, dan acar jahe di atas nasi.
+            \n11. Mulai dari bawah, gulung nori dengan erat.
+            \n12. Dengan menggunakan pisau tajam, potong gulungan sushi menjadi 8 bagian yang sama besar.
+        </item>
+    </string-array>
+
+    <string-array name="data_calories">
+        <item>313 kalori</item>
+        <item>462 kalori</item>
+        <item>59 kalori</item>
+        <item>237 kalori</item>
+        <item>338 kalori</item>
+        <item>348 kalori</item>
+        <item>192 kalori</item>
+        <item>509 kalori</item>
+        <item>249 kalori</item>
+        <item>325 kalori</item>
+        <item>664 kalori</item>
+        <item>165 kalori</item>
+    </string-array>
+
 </resources>

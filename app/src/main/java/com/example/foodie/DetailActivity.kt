@@ -49,7 +49,7 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
             val img = dataFood.photo
             imgFood.setImageResource(img)
             val serving = dataFood.servings
-            tvServing.text = "$serving servings"
+            tvServing.text = resources.getString(R.string.servings_detail, serving)
             val ing = dataFood.ingredients
             tvIngredients.text = ing
             val direction = dataFood.directions
@@ -60,9 +60,9 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
 
         binding.shareAction.setOnClickListener {
             val nameRecipe = tvName.text.toString()
-            val ingr = tvIngredients.text.toString()
-            val direc = tvDirection.text.toString()
-            val shareText = "$nameRecipe \nIngredients:\n$ingr \n\nDirections:\n$direc"
+            val ingredients = tvIngredients.text.toString()
+            val directions = tvDirection.text.toString()
+            val shareText = "$nameRecipe \nIngredients:\n$ingredients \n\nDirections:\n$directions"
             val intent = Intent()
             intent.action = Intent.ACTION_SEND
             intent.putExtra(Intent.EXTRA_TEXT, shareText)

@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Foodie" parent="Theme.Material3.DayNight">
         <!-- Primary brand color -->
@@ -24,6 +24,16 @@
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <style name="TextContent.Splash">
+        <item name="fontFamily">@font/bubblegum_sans</item>
+        <item name="android:textColor">@color/colorSubtitle</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="TextContent.Splash.Title">
+        <item name="android:layout_marginTop">18dp</item>
+    </style>
+
     <style name="TextContent.About">
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:textSize">16sp</item>
@@ -46,7 +56,7 @@
     <style name="TextContent.Information">
         <item name="fontFamily">@font/roboto</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginStart">4dp</item>
         <item name="android:layout_gravity">center</item>
     </style>
 
@@ -68,6 +78,7 @@
     <style name="TextContent.BodyMedium.Margin">
         <item name="android:textColor">@color/colorSubtitle</item>
         <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
         <item name="android:layout_marginTop">8dp</item>
     </style>
 
@@ -93,6 +104,7 @@
         <item name="fontFamily">@font/roboto</item>
         <item name="android:textColor">@color/colorSubtitle</item>
         <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">4dp</item>
     </style>
 
 </resources>

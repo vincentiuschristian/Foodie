@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Foodie" parent="Theme.Material3.DayNight">
         <!-- Primary brand color -->
@@ -13,13 +13,20 @@
         <item name="colorOnSecondary">@color/dark_background</item>
         <item name="colorSecondaryContainer">@color/sweet_brown</item>
 
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
 
     </style>
 
     <style name="TextContent">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextContent.About">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/colorSubtitle</item>
     </style>
 
     <!--Detail Activity-->
@@ -37,18 +44,18 @@
     <style name="TextContent.Information">
         <item name="fontFamily">@font/roboto</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginStart">4dp</item>
         <item name="android:layout_gravity">center</item>
     </style>
 
     <style name="TextContent.HeadlineMedium">
+        <item name="android:textSize">16sp</item>
         <item name="android:layout_marginStart">16dp</item>
         <item name="android:layout_marginTop">16dp</item>
     </style>
 
     <style name="TextContent.HeadlineMedium.Bold">
         <item name="fontFamily">@font/roboto_medium</item>
-        <item name="android:textSize">16sp</item>
     </style>
 
     <style name="TextContent.BodyMedium">
@@ -59,6 +66,7 @@
     <style name="TextContent.BodyMedium.Margin">
         <item name="android:textColor">@color/separatorColor</item>
         <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
         <item name="android:layout_marginTop">8dp</item>
     </style>
 
@@ -83,7 +91,8 @@
     <style name="TextContent.BodyMedium.Item">
         <item name="fontFamily">@font/roboto</item>
         <item name="android:textColor">@color/separatorColor</item>
-        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">4dp</item>
     </style>
 
 </resources>
