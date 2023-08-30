@@ -33,11 +33,11 @@
             <com.makeramen.roundedimageview.RoundedImageView
                 android:id="@+id/imgFoodDetail"
                 android:layout_width="match_parent"
-                android:layout_height="330dp"
+                android:layout_height="320dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:src="@drawable/aglio9"
-                app:riv_corner_radius="18dp" />
+                app:riv_corner_radius="16dp" />
 
             <TextView
                 android:id="@+id/tvNameDetail"
