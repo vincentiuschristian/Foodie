@@ -59,8 +59,6 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
             tvCal.text = cal
         }
 
-
-
         binding.shareAction.setOnClickListener {
             val nameRecipe = tvName.text.toString()
             val ingredients = tvIngredients.text.toString()
