@@ -19,6 +19,9 @@ class AboutPageActivity : AppCompatActivity() {
 
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
+        val actionBar = supportActionBar
+        actionBar!!.title = resources.getString(R.string.about)
+
         val tvName = binding.tvNameProfile
         val tvEmail = binding.tvEmailDicoding
 

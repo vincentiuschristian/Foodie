@@ -10,7 +10,6 @@ import com.example.foodie.databinding.ItemActivityBinding
 
 class FoodieAdapter(
     private val listFood: ArrayList<Foodie>,
-    onItemclickCallBack: OnItemClickCallBack,
 ): RecyclerView.Adapter<FoodieAdapter.ListViewHolder>() {
 
     class ListViewHolder(var binding : ItemActivityBinding): RecyclerView.ViewHolder(binding.root)
@@ -28,14 +27,10 @@ class FoodieAdapter(
         holder.binding.TvTime.text = time
         holder.binding.TvServing.text = servings
         holder.binding.foodImg.setImageResource(photo)
-        holder.binding.TvServing.text = servings
         holder.itemView.setOnClickListener {
             val intent = Intent(holder.itemView.context, DetailActivity::class.java)
             intent.putExtra("key_food", listFood[holder.adapterPosition])
             holder.itemView.context.startActivity(intent)
         }
-    }
-    interface OnItemClickCallBack{
-        fun onItemClicked(data: Foodie)
     }
 }

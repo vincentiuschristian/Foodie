@@ -20,11 +20,8 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         val tvName: TextView = binding.tvNameDetail
         val tvTime: TextView = binding.tvTimeDetail
@@ -40,6 +37,10 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
             @Suppress("DEPRECATION")
             intent.getParcelableExtra(KEY_FOOD)
         }
+
+        val nameFood = dataFood?.name
+        val actionBar = supportActionBar
+        actionBar!!.title = resources.getString(R.string.detailFood, nameFood)
 
         if (dataFood != null) {
             val name = dataFood.name
@@ -57,6 +58,8 @@ class DetailActivity : AppCompatActivity(), View.OnClickListener {
             val cal = dataFood.calories
             tvCal.text = cal
         }
+
+
 
         binding.shareAction.setOnClickListener {
             val nameRecipe = tvName.text.toString()

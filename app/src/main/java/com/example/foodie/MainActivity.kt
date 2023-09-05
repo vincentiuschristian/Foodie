@@ -65,14 +65,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showRecyclerList() {
         binding.rvItem.layoutManager = LinearLayoutManager(this)
-        val foodieAdapter = FoodieAdapter(list, object : FoodieAdapter.OnItemClickCallBack {
-            override fun onItemClicked(data: Foodie) {
-                val intentDetail = Intent(this@MainActivity, DetailActivity::class.java)
-                intent.putExtra("FOOD", data)
-                startActivity(intentDetail)
-            }
-        })
+        val foodieAdapter = FoodieAdapter(list)
         binding.rvItem.adapter = foodieAdapter
     }
-
 }

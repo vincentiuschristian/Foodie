@@ -15,6 +15,7 @@
     <string name="_4_person">4 orang</string>
     <string name="_30_minutes">30 menit</string>
     <string name="profile">action_profile</string>
+    <string name="detailFood">%1$s</string>
     <string name="_260_calories">260 Kalori</string>
     <string name="instructionsText">Teks Petunjuk\n</string>
     <string name="profile_picture">foto profile</string>
@@ -24,6 +25,7 @@
     <string name="clock_icon">ikon jam</string>
     <string name="person_icon">ikon orang</string>
     <string name="calories_icon">ikon kalori</string>
+    <string name="about">Profile</string>
 
     <string-array name="data_name">
         <item>Lasagna</item>

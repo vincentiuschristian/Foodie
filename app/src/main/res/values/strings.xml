@@ -5,6 +5,7 @@
     <string name="servings">Servings</string>
     <string name="servings_detail">%1$s servings</string>
     <string name="share_detail">%1$s \nIngredients:\n%2$s \n\nInstructions:\n%3$s</string>
+    <string name="detailFood">%1$s</string>
     <string name="time">time</string>
     <string name="name">name</string>
     <string name="foodImage">foodImage</string>
@@ -26,6 +27,7 @@
     <string name="clock_icon">clock_icon</string>
     <string name="person_icon">person icon</string>
     <string name="calories_icon">calories icon</string>
+    <string name="about">About Profile</string>
 
     <string-array name="data_name">
         <item>Lasagna</item>
